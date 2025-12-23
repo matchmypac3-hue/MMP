@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "MMP3",
+    "slug": "mmp3",
+    "version": "1.0.2",
+    "scheme": "mmp3",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "web": {
+      "bundler": "metro",
+      "backgroundColor": "#0f2027"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-community/datetimepicker",
+      "react-native-health-connect"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "package": "com.momisback.mmp3",
+      "permissions": [
+        "android.permission.health.READ_EXERCISE"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.momisback.mmp3",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "MMP3 peut lire vos activités (workouts) depuis Apple Health pour importer automatiquement vos séances.",
+        "NSHealthUpdateUsageDescription": "MMP3 peut écrire des données dans Apple Health si vous activez l’export."
+      }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "de17fbfe-548d-45c6-8ae0-357ea9cf8259"
+      }
+    }
+  }
+}
